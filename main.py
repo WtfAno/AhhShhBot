@@ -2,17 +2,10 @@ import asyncio
 from pyrogram.types import Message
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, CallbackQuery
-from config import bot
+from config import bot, START_PIC, START_MESSAGE, START_BUTTONS
 
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
-START_PIC = 'https://graph.org/file/f7da95a365c0f89c85fb7.jpg'
-START_MESSAGE = """**ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ꜱᴀᴠᴇ ꜱᴇᴄʀᴇᴛ ᴘɪᴄꜱ ᴀɴᴅ ᴠɪᴅᴇᴏꜱ ꜱᴇɴᴛ ᴡɪᴛʜ ᴛɪᴍᴍᴇʀ** \n\n**ᴄʜᴇᴄᴋ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ**\n\n**ᴛʜᴀɴᴋ ʏᴏᴜ!!!**"""
-START_BUTTONS = [
-    [
-        InlineKeyboardButton('𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/BotsDom')
-    ]
-]
    await message.reply_photo(
          photo = START_PIC,
          caption = START_MESSAGE,
