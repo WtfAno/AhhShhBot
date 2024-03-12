@@ -20,7 +20,7 @@ START_BUTTONS = [
 ]
 @bot.on_message(filters.command('start') & filters.private)
 def start(bot, message):
-    bot.reply_photo(
+    message.reply_photo(
         photo = START_PIC,
         caption = START_MESSAGE,
         reply_markup = InlineKeyboardMarkup(START_BUTTONS)
