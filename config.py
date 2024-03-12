@@ -2,7 +2,7 @@ import re
 from os import getenv
 
 from dotenv import load_dotenv
-from pyrogram import filters
+from pyrogram import filters, Client
 
 load_dotenv()
 
@@ -18,3 +18,5 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @LOVELYR_OBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 6154979500))
+
+bot = Client('myacc', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
