@@ -1,8 +1,7 @@
 from pyrogram.types import Message
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, CallbackQuery
-from config import API_ID, API_HASH, BOT_TOKEN
-bot = Client('myacc', api_id=config.API_ID, api_hash=config.API_HASH, bot_token=config.BOT_TOKEN)
+from config import bot
 
 START_PIC = 'https://graph.org/file/f7da95a365c0f89c85fb7.jpg'
 START_MESSAGE = """**ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ꜱᴀᴠᴇ ꜱᴇᴄʀᴇᴛ ᴘɪᴄꜱ ᴀɴᴅ ᴠɪᴅᴇᴏꜱ ꜱᴇɴᴛ ᴡɪᴛʜ ᴛɪᴍᴍᴇʀ** \n\n**ᴄʜᴇᴄᴋ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ**\n\n**ᴛʜᴀɴᴋ ʏᴏᴜ!!!**"""
