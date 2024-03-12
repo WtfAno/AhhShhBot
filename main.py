@@ -1,7 +1,7 @@
-from pyrogram.types import Message, filters
+from pyrogram.types import Message
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, CallbackQuery
-
+from pyrogram import filters
 import config
 
 bot = Client('myacc',
